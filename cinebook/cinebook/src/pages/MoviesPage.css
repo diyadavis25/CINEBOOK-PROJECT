@@ -1,0 +1,43 @@
+/* ─── MOVIES PAGE ────────────────────────────────────────────────────────── */
+
+.movies-page { padding-bottom: 80px; }
+
+.movies-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.movies-filter__btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.movies-filter__btn:hover {
+  border-color: var(--red);
+  color: var(--text);
+}
+
+.movies-filter__btn--active {
+  background: var(--red) !important;
+  border-color: var(--red) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px var(--red-glow);
+}
+
+.movies-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 28px;
+}
+
+.movies-count strong { color: var(--text); }
